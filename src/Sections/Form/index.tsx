@@ -1,17 +1,15 @@
 import React from 'react';
+import PartCheckBox from '../PartCheckBox/index.tsx';
+import CoordinateForm from '../CoordinateForm/index.tsx';
 import './style.css';
-import PartCheckBox from '../PartCheckBox';
-import CoordinateForm from '../CoordinateForm';
+import getRequest from '../../Services/getRequest.tsx';
 
-const Form = () => {
+export default function Form() {
 
-    function search(formData) {
-        const query = formData.get("query");
-        alert(`You searched for '${query}'`);
-    }
-    
+  
     return(
-        <form action={search}>
+        <div>
+            <form>
             <div className='partBlock'>
               <PartCheckBox part={1} imageSource='img/Jonathan_scale.png' protagonistFName='Jonathan' protagonistSName='Joestar' />
               <PartCheckBox part={2} imageSource='img/Joseph_scale.png' protagonistFName='Joseph' protagonistSName='Joestar' />
@@ -22,8 +20,9 @@ const Form = () => {
             </div>
             <br></br>
             <CoordinateForm/>
-        </form>
+            </form>
+            <button onClick={getRequest}>Submit</button>
+        </div>
     )
 }
 
-export default Form;
