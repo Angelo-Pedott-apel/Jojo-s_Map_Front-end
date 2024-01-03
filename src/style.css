@@ -1,0 +1,13 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#background {
+	background-color: rgba(218, 56, 141, 0.4);
+	background-image: linear-gradient(to left, rgba(218, 56, 141, 0.75), rgba(251, 232, 243,1), rgba(218, 56, 141, 0.75));
+}
+
+.partBlock {
+    text-align: center;
+}

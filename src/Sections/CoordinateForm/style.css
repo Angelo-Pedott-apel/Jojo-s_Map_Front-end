@@ -1,0 +1,29 @@
+.coordinateForm {
+    text-align:center; 
+}
+
+.coordinateForm > div{
+    text-align:center; 
+}
+
+.coordinateForm > div > label{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    cursor:text;
+    display:inline-block;
+    width:73.7px;
+}
+
+.coordinateForm > input{
+    text-align: center;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+.label > abbr {
+    cursor:help;
+}
+
+.coordinateForm > div > input {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    width:312px;
+    text-align:center;
+}

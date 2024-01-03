@@ -1,0 +1,12 @@
+.about > p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.about > p > img{
+    text-align: center;
+    width: 232px;
+    height: 143px;   
+}
